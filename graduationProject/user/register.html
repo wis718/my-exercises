@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>趣动用户注册</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../style/bootstrap.min.css">
+<link rel="stylesheet" href="../style/font-awesome.min.css"/>
+<link rel="stylesheet" href="../fonts/iconfont/iconfont.css">
+<link rel="stylesheet" href="../style/public.css">
+<link rel="stylesheet" href="../style/user/register.css">
+</head>
+<body>
+    <div class="wrapper">
+    	<div class="container">
+    		<div class="header">
+		    	<div class="logo">趣动</div>
+		    	<h4>趣动用户注册界面</h4>
+	    	</div>
+	    	<div class="register-box section">
+	    		 <div class="row">
+				    <div class="col-md-2"></div>
+				    <div class="col-md-8 register">
+				    	<div class="button">
+				    		<div  id="person" class="person"><span>个<br/>人<br/>用<br/>户</span></div>
+				    		<div  id="company" class="company">企<br/>业<br/>用<br/>户</div>
+				    	</div>
+				    	<div class="register-form">
+				    		<div class="person_form">
+				    			<form class="navbar-form " >
+					    			<div class="form-group dis-b">
+					    				<input type="text" class="form-control inputClass" id="username" placeholder="用户名">
+					    				<p class="error username-error"> 用户名错误</p>	   	
+					   				 </div>
+					   				 <div class="form-group dis-b">
+					    				<input type="password" class="form-control inputClass" id="password" placeholder="密码">
+					    				<p class="error username-error"> 密码格式错误</p>	 	   	
+					   				 </div>
+					   				 <div class="form-group dis-b">
+					    				<input type="text" class="form-control inputClass" id="confirpwd" placeholder="确认密码">	
+					    				<p class="error username-error"> 两次密码不一致！</p>	    	
+					   				 </div>
+					   				 <div class="form-group dis-b">
+					    				<input type="text" class="form-control inputClass" id="phone" placeholder="手机号">	
+					    				<p class="error username-error"> 手机号格式错误！</p>	    	
+					   				 </div>
+					   				 <div class="form-group dis-b">
+					    				<input type="text" class="form-control phone inputClass" id="verifycode" placeholder="验证码">
+					    				<button class="verifycode" id="sendCode" >发送验证码</button>
+					    				
+					    				<p class="error username-error" id="test"> 手机号格式或验证码错误</p>	 	   	
+					   				 </div>
+					   				 <div class="checkbox">
+									    <label title="我已阅读《趣动网站相关协议》，并同意并授权！">
+									      <input type="checkbox" class="checkbox-check">我已阅读<a href="">《趣动网站相关协议》</a>，并同意并授权！
+									    </label>
+									 </div>
+					   				 <div class="form-group dis-b">
+					   				 	<input type="submit"  class="btn btn-default btn-register" value="注册">
+						   	
+					   				 </div>
+								</form>
+				    		</div>
+				    		<div class="company_form">
+				    			<!-- progressbar -->
+								<ul id="progressbar">
+									<li class="active">step one</li>
+									<li>step two</li>
+									<li>step three</li>
+								</ul>
+								<form class="navbar-form " >
+									<fieldset>
+						    			<div class="stepone">
+							    			<div class="form-group dis-b">
+							    				<input type="text" class="form-control inputClass" id="username" placeholder="用户名">
+							    				<p class="error username-error"> 用户名错误</p>	   	
+							   				 </div>
+							   				 <div class="form-group dis-b">
+							    				<input type="password inputClass" class="form-control " id="password" placeholder="密码">
+							    				<p class="error username-error"> 密码格式错误</p>	 	   	
+							   				 </div>
+							   				 <div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="confirpwd" placeholder="确认密码">	
+							    				<p class="error username-error"> 两次密码不一致！</p>	    	
+							   				 </div>
+							   				 <div class="form-group dis-b">
+							    				 <input type="text" class="form-control " id="phone" placeholder="联系电话">	
+							    				 <p class="error username-error"> 手机号格式错误！</p>	    	
+							   				 </div>
+							   				 <div class="form-group dis-b">
+							    				<input type="text" class="form-control verify" id="verifycode" placeholder="验证码">
+							    				<button class="verifycode">验证码</button>
+							    				<p class="error username-error"> 验证码错误</p>	 	   	
+							   				 </div>
+							   				 <div class="checkbox">
+											    <label title="我已阅读《趣动网站相关协议》，并同意并授权！">
+											    <input type="checkbox" class="checkbox-check">我已阅读<a href="">《趣动网站相关协议》</a>，并同意并授权！
+											    </label>
+											 </div>
+							   				 <div class="form-group dis-b">
+							   				 	 <input type="button"  class="btn btn-default btn-register btn_one next" value="下一步">
+
+							   				 </div>
+										</div>
+									</fieldset>
+									<fieldset>
+										<div class="steptwo">
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="username" placeholder="企业名称">
+							    				<p class="error username-error"> 企业名称错误</p>	   	
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="username" placeholder="企业法人">
+							    				<p class="error username-error"> 企业法人</p>	   	
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="username" placeholder="工商注册代码/注册号">
+							    				<p class="error username-error"> 工商注册代码</p>	   	
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="username" placeholder="所属行业">
+							    				<p class="error username-error"> 所属行业错误</p>	   	
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<select name="" id="provice">
+							    					<option value="">所属省</option>
+							    					<option value="">浙江</option>
+							    					<option value="">上海</option>
+							    				</select>
+							    				<select name="" id="city">
+							    					<option value="">所属市</option>
+							    					<option value="">浙江</option>
+							    					<option value="">上海</option>
+							    				</select>
+							    				<select name="" id="district">
+							    					<option value="">所属区/县</option>
+							    					<option value="">浙江</option>
+							    					<option value="">上海</option>
+							    				</select>
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control date" placeholder="成立/年">
+							    				<input type="text" class="form-control date" placeholder="成立/月">
+							    				<p class="error username-error"> 成立日期错误</p>	   	
+							   				</div>
+							   				<div class="form-group dis-b">
+							    				<input type="text" class="form-control " id="username" placeholder="电子邮箱">
+							    				<p class="error username-error"> 邮箱格式错误</p>	   	
+							   				</div>
+					
+							   				<div class="form-group dis-b">
+							   				 	 <input type="button"  class="btn btn-default btn-register btn_two next" value="下一步">
+							   				</div>
+							   				<div class="form-group dis-b">
+							   				 	 <input type="button"  class="btn btn-default btn-register previous" value="返回上一步">
+							   				</div>
+										</div>
+									</fieldset>
+									<fieldset>
+									<div class="stepthree">
+										<div class="form-group dis-b pic">
+											<div class="addpic">
+												
+												<img src="images/logo/add.png" alt="">
+											</div>
+										</div>
+						   				 <div class="form-group dis-b">
+						    				<span>请上传营业执照</span>
+						    				<input type="file" class="uploadFile" id="uploadFile" >
+						    				<p class="error username-error">请上传营业执照</p>	   	
+						   				 </div>
+						   				 <div class="form-group dis-b">
+						   				 	 <input type="submit"  class="btn btn-default btn-register submit" value="注册">
+						   				 </div>
+						   				 <div class="form-group dis-b">
+						   				 	 <input type="button"  class="btn btn-default btn-register previous" value="返回上一步">
+						   				 </div>
+									</div>
+									</fieldset>
+								</form>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="col-md-2"></div>        
+				 </div>
+    		</div> 
+    	</div>
+    </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/register.js"></script>
+<script>
+
+	
+
+</script>
+</html>

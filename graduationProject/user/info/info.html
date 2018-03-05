@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人信息</title>
+<meta name="description" content="@autor/wis">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../style/bootstrap.min.css">
+<link rel="stylesheet" href="../../style/user/info.css">
+</head>
+<body>
+<div class="mainbody">
+	<div class="content">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8">
+				<form action="<c:url value='/UserServlet'/>" method="post" class="navbar-form " id="">
+					<input type="hidden" name="method" value=""/>
+					<div class="row mini">
+						<div class="col-xs-12 col-sm-5 col-md-5">
+							<div class="form-group ">
+								<label for="username">用户名：</label>
+								<input type="text" name="username" class="form-control inputClass inputmini" id="username" value="${form.username}" readonly="readonly">
+							</div>
+					    </div>
+					    <div class="col-xs-12 col-sm-5 col-md-5">
+							<div class="form-group ">
+								<label for="age">生日：</label>
+								<input type="text" name="age" class="form-control inputClass inputmini" id="age" value="${form.age}" readonly="readonly">
+								<p class="error" id="ageError"></p>	
+							</div>
+					    </div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-5 col-md-5">
+							<div class="form-group " id="sex_show">
+							 	<label for="sex">性别：</label>
+								<input type="text" name="sex" class="form-control inputClass inputmini" id="sex" value="${form.sex}" readonly="readonly">
+								<p class="error" id="sexError"></p>
+							</div>
+							<div class="form-group " id="sex_edit">
+								<label for="sex">性别：</label>
+								<input name="sex" type="radio" value="男">男
+								<input name="sex" type="radio" value="女">女
+							</div>
+					    </div>
+					    <div class="col-xs-12 col-sm-5 col-md-5">
+							<div class="form-group " id="start_edit">
+								<label for="userstart">星座：</label>
+								<input type="text" name="userstart" class="form-control inputClass inputmini" id="userstart" value="${form.userstart}" readonly="readonly">
+								<p class="error" id="userstartError"></p>	 
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group dis-b">
+					 	<label for="email">邮箱：</label>
+						<input type="text" name="email" class="form-control inputClass input-class" id="email" value="${form.email}" readonly="readonly">
+						<p class="error" id="emailError"></p>	   	
+					</div>
+					<div class="form-group dis-b">
+					 	<label for="profession">职业：</label>
+						<input type="text" name="profession" class="form-control inputClass input-class" id="profession" value="${form.profession}" readonly="readonly">
+						<p class="error" id="professionError"></p> 	   	
+					</div>
+					<div class="form-group dis-b">
+					 	<label for="address">地址：</label>
+						<input type="text" name="address" class="form-control inputClass input-class" id="address" value="${form.address}" readonly="readonly">
+						<p class="error" id="addressError"></p> 	   	
+					</div>
+					<div class="form-group dis-b">
+					 	<label for="userdesc">个性签名：</label>
+						<textarea type="text" name="userdesc" class="form-control inputClass input-class" id="userdesc" placeholder="用少于250个字，展现不一样的你" value="${form.userdesc}" readonly="readonly">${form.userdesc}
+						</textarea> 
+						<p class="error" id="userdescError"></p> 	   	
+					</div>
+					<div class="form-group dis-b clearfix" id="update_box">
+					    <label></label>
+		   				<input type="submit" class="btn btn-update" value="确认修改" id="update">	
+		   			</div>
+		   			<div class="form-group dis-b clearfix" id="edit_box">
+					    <label></label>
+		   				<input type="button" class="btn btn-edit" value="编辑资料" id="edit">	
+		   			</div>
+			    </form>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="wrapper-left-top">
+					<div>
+						<div class="person-img">
+							<div class="img">
+								<img src="../../images/banner/banner1.jpg" alt="">
+							</div>
+						</div>
+						<div class="phone">
+							<p>手机号码：15990063572</p>
+						</div>
+					</div>
+					<div class="button">
+						<button class="btn update_img" id="update_img">修改头像</button>
+						<form action="<c:url value='/UserServlet'/>" method="post" class="navbar-form " id="person_img" enctype="multipart/form-data">
+							
+							<input type="file" class="upload" name="imgSrc" />
+							
+							<input type="submit" class="btn upload_img" value="上传图片 ">
+					   </form>
+					</div>
+				</div>
+				<div class="wrapper-left-bottom">
+					<div class="active">
+						当前等级：LV8
+						活跃程度：789天
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#sex_edit").hide();//隐藏性别编辑选项
+		//点击编辑资料按钮，将表单不可编辑，变为可编辑
+	  $("#edit").click(function(){
+		  	$(".inputClass").each(function(){
+		  		$(this).removeAttr("readonly");//将只读属性移除
+		  	});
+		  	$("#sex_edit").show();//显示性别编辑选项
+		  	$("#sex_show").hide();//隐藏性别内容文本
+		  
+		  	$("#edit_box").hide();//编辑资料按钮隐藏
+		  	$("#update_box").show();//确认修改按钮显示
+	  });
+	  //修改头像按钮
+	  $("#update_img").click(function(){
+		  	$("#person_img").show();
+		  	$("#update_img").hide();
+	  });
+	});
+</script>
+</html>

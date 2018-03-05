@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>趣动修改密码</title>
+<meta name="description" content="@autor/wis">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../style/bootstrap.min.css">
+<link rel="stylesheet" href="../../style/user/pwd.css">
+</head>
+<body>
+
+<div class="mainbody">
+	<div class="content">
+		<form action="<c:url value='/UserServlet'/>" method="post" class="navbar-form " id="">
+			<input type="hidden" name="method" value=""/>
+			<div class="form-group dis-b">
+				<label for="password">旧密码：</label>
+				<input type="password" name="upassword" class="form-control inputClass" id="password" placeholder="旧密码" value="${form.password}"
+				>
+				<p class="error" id="passwordError"></p>
+			</div>
+			<div class="form-group dis-b">
+				<label for="newpassword">新密码：</label>
+				<input type="password" name="newpassword" class="form-control inputClass" id="newpassword" placeholder="新密码" value="${form.upassword}">
+
+				<p class="error" id="newpasswordError">${errors.newpassword}</p>	
+			</div>
+			<div class="form-group dis-b">
+				<label for="repassword">确认密码：</label>
+				<input type="password" name="repassword" class="form-control inputClass" id="newpassword" placeholder="确认密码" value="${form.repassword}">
+				
+				<p class="error" id="repasswordError">${errors.repassword}</p>	   	
+				 </div>
+				 <div class="form-group dis-b">
+				 	<label for="repassword">验证码：</label>
+				<input type="text" name="verifycode" class="form-control verify inputClass" id="verifycode" placeholder="验证码" value="${form.verifycode}">
+				
+				<p class="error error-verifycode" id="verifycodeError">${errors.verifycode}</p>
+					 	   	
+				 </div>
+				 <div class="form-group dis-b clearfix">
+				 	<label class="fl"></label>
+				 	<div class="verifyimg fl"><img src="<c:url value='/VerifyCodeServlet' />" id="verifyimg"/></div>
+				<input type="button" class="btn verifycode fl" id="change" onclick="_changeVerify()" value="换一张"/>
+				 </div>
+				<div class="form-group dis-b">
+					<label></label>
+   				<input type="submit" class="btn btn-update" value="修改" id="submit">	
+   			</div>
+		</form>
+	</div>
+</div>
+			
+</body>
+</html>

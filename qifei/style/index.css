@@ -1,0 +1,408 @@
+@charset 'UTF-8';
+*{box-sizing:border-box;}
+/*------------
+    公开类 
+-------------*/
+.container{
+	max-width:1280px;
+	padding-left:40px;
+	padding-right:40px;
+	margin:auto;
+}
+.c-3ea{
+	color:#3EA3FF !important;
+}
+.bgc-eee{
+	background-color: #efefef;
+}
+/*------------
+    header 开始 
+-------------*/
+header .wrap{
+	height:69px;
+}
+
+header .topbar{	
+	padding:18px 0;
+	background:rgba(0,0,0,0.9);
+	transition:5s;
+	top:-69px;
+}
+header .scroll{
+	position: fixed;
+	top:0;
+	background:rgba(0,0,0,0.8);
+	width:100%;
+	z-index:9999;
+}
+header .topbar .container{
+	line-height:33px;
+}
+header .topbar .container .logo{
+	margin-right:70px;
+}
+header .topbar .container nav a{
+	margin:0 20px;
+}
+header .topbar .container nav .wrapper .menu{
+	z-index:9999999999;
+}
+header .topbar .container .topbar-r .login{
+	display:block;
+}
+header .topbar .container .topbar-r .login a{
+	margin:0 15px;
+}
+header .topbar .container .topbar-r .register{
+	display:none;
+	padding:0 10px;
+	border:1px solid #fff;
+	
+}
+header .topbar .container .topbar-r .menu{
+	display:none;
+	margin-right:20px;
+}
+
+/*------ banner starts ------*/
+header .banner video{
+	object-fit:fill;/*让视频铺满宽度*/
+	height:750px;
+}
+header .banner .mark{
+	top:0;
+	width:100%;
+	height:100%;
+}
+header .banner .mark .mark-r{
+	
+	padding:170px 10% 0;
+	font-size:22px;
+}
+header .banner .mark h2{
+	font-size:40px;
+	font-weight:normal;
+}
+header .banner .mark h2 .mark-icon{
+	width:3px;
+	height:30px;
+	vertical-align:middle;
+	background-color:#fff;
+	opacity:0.2;
+	animation:run 1000ms 300ms infinite;
+}
+@keyframes run{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+header .banner .mark p{
+	margin-top:70px;
+}
+header .banner .mark a{
+	display:inline-block;
+	width:280px;
+	line-height:60px;
+	margin-top:45px;
+}
+header .banner .mark .mark-r a{
+	border:1px solid #fff;
+}
+header .banner .mark .mark-r a:hover{
+	background-color: #fff;
+	color:#999;
+}
+header .banner .mark .mark-l{
+	display:none;
+	padding-top:85px;
+	margin-left:10%;
+	width:80%;
+	font-size:20px;
+	
+}
+header .banner .mark .mark-l p{
+	margin-top:22px;
+}
+header .banner .mark .mark-l a{
+	margin-top:22px;
+	background-color: rgb(54, 133, 190);
+	color:#fff;
+}
+header .banner .mark .mark-l a:hover{
+	background-color:#00648F;
+}
+/*--------------
+    main start
+---------------*/
+/*------ sec1 starts ------*/
+.main section{
+	padding:80px 0 40px;
+}
+.main section .text h3{
+	font-size:35px;
+	font-weight:normal;
+	color:#494949;
+	padding:30px 0;
+}
+.main section .text p{
+	color:#696969;
+	font-size:16px;
+	line-height:30px;
+}
+.main .sec1 .container .media img{
+	display:none;
+	max-width:100%;
+}
+.main section .container .media .video-wrap{
+	padding-top:40px;
+	height:703px;
+	background: url('../images/video1_bg.png') no-repeat center center;
+	justify-content:center;
+	align-items:flex-start;
+}
+.main section .media .video-wrap video{
+	top:40px;
+}
+/*------ sec2 starts ------*/
+.main .sec .text{
+	width:50%;
+	padding:55px 55px;
+	text-align:left;
+}
+.main .sec .media{
+	width:50%;	
+}
+.main section .container .media img{
+	max-width:100%;
+}
+/*------ sec6 starts ------*/
+.main section ul.flex{
+	display:flex;
+	padding:0 70px;
+	justify-content:space-between;
+}
+.main section ul.flex li{
+	width:290px;
+	padding:40px 0;
+	margin:0 10px;
+	border:1px solid #999;
+}
+.main section ul.flex li .two{
+	display:none;
+}
+.main section ul.flex li:hover{
+	border:1px solid #3EA3FF;
+	background-color: #fff;
+}
+.main section ul.flex li:hover .first{
+	display:none;
+}
+.main section ul.flex li:hover .two{
+	display:inline-block;
+}
+.main section ul.flex li p{
+	color:#333;
+	font-weight:bold;
+}
+/*------ sec7 starts ------*/
+.main section .banner{
+	padding:0;
+	
+}
+.main section .banner .banner-wrap{
+	overflow:hidden;
+	
+}
+.main section .media .banner-wrap ul{
+	width:240%;
+	display:flex;
+	
+}
+.main section .media .banner-wrap ul li a{
+	display:block;
+}
+.main section .media .banner-wrap ul li a img{
+	max-width:100%;
+}
+.main section .media .button{
+	width:26px;
+	height:30px;
+	line-height:26px;
+	z-index:999;
+	top:50%;
+	font-size:30px;
+	margin-top:-15px;
+}
+.main section a.prev{
+	left:10px;
+}
+.main section a.next{
+	right:10px;
+}
+/*------ sec8 starts ------*/
+.main .sec8 .container ul{
+	padding:0;
+	display:flex;
+	flex-wrap:wrap;
+}
+.main .sec8 .container ul li{ 
+	width:33%;
+	padding:0;
+	border:none;
+}
+.main .sec8 .container ul li:hover{
+	border:none;
+	background-color: transparent;
+}
+.main .sec8 .container ul li a img{
+	max-width:100%;
+	
+}
+.main .sec8 .container a.more{
+	width:180px;
+	padding:10px 0;
+	color:#fff;
+	border-radius:20px;
+	background-color:#3EA3FF;
+}
+.main .sec8 .container a.more:hover{
+	background-color:#3E90FF;
+}
+.main .sec8 .container a.more i{
+	margin-left:15px;
+}
+/*------ sec9 starts ------*/
+.main .sec9{
+	
+	background: url('../images/sec9-bg.jpg') no-repeat center/cover;
+}
+
+.main .sec9 .container .text p{
+	color:#fff;
+}
+.main .sec9 .container .text hr{
+	width:60px;
+	position: relative;
+	top:-25px;
+	border-width:2px;
+}
+.main .sec9 .container .media .img img{
+	max-width:100%;
+}
+/*------ sec10 starts ------*/
+.main .sec10 .container ul.media{
+	width:100%;
+	padding:0;
+}
+.main .sec10 .container ul.media p{
+	color:#696969;
+}
+.main .sec10 .container ul.media li img{
+	max-width:100%;
+}
+/*------ sec11 starts ------*/
+.main .sec11 .container ul.media{
+	display:flex;
+	flex-wrap:wrap;
+}
+.main .sec11 .container ul.media li{
+	width:25%;
+}
+.main .sec11 .container ul.media li a{
+	display:block;
+}
+.main .sec11 .container ul.media li a img{
+	max-width:100%;
+	transition:1s;
+	-webkit-filter:grayscale(100%);
+}
+.main .sec11 .container ul.media li:hover a img{
+	-webkit-filter:grayscale(0%);
+}
+/*------ sec12 starts ------*/
+.main .sec12 .container .wrap{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+.main .sec12 .container .wrap .media{
+	width:300%
+}
+.main .sec12 .container .wrap .media li{
+	width:33.3%
+}
+.main .sec12 .container .wrap .media .icon{
+	width:20%;
+	
+}
+.main .sec12 .container .wrap .media .text{
+	width:80%;
+	padding:0px 100px;
+}
+.main .sec12 .container .wrap .media .text em{
+	display:block;
+	width:100%;
+}
+
+/*------ sec13 starts ------*/
+.main .sec13{
+	padding-bottom:0;
+}
+
+.main .sec13 .container .text .hotline{
+	width:175px;
+}
+/*------ sec14 starts ------*/
+.main .sec14{
+	padding:0;
+}
+.main .sec14 a{
+	color:#3EA3FF;
+}
+/*------ sec15 starts ------*/
+.main .sec15 .about{
+	display:flex;
+}
+.main .sec15 .container .sec15-l{
+	flex:auto;
+	width:350px;
+}
+.main .sec15 .container .sec15-l h3{
+	line-height:60px;
+	color:#002346;
+}
+.main .sec15 .container .sec15-l em{
+    display:block;
+	margin:20px 0;
+	font-weight:bold;
+	font-size:15px;
+	color:#002346;
+	font-style:normal;
+}
+.main .sec15 .container .sec15-l span{
+	font-weight:bold;
+	font-size:16px;
+	color:#002346;
+	
+}
+.main .sec15 .container .sec15-l .friendLink{
+	display:flex;
+}
+.main .sec15 .container .sec15-l .friendLink li a img{
+	max-width:100%;
+}
+.main .sec15 .container .sec15-r{
+	display:flex;
+	width:850px;
+	justify-content:space-around;
+}
+.main .sec15 .container .sec15-r dl dt{
+	font-weight:bold;
+	font-size: 1.17em;
+	line-height:60px;
+}
+.main .sec15 .container .sec15-r dl dd a{
+	line-height:40px;
+}
+.main .sec15 .container .sec15-r dl dd a:hover{
+	color:#61B0FF;
+}

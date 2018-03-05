@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-01-06 18:30:48
+ * @version $Id$
+ */
+ /** public style **/
+ html,body{
+ 	background-color: transparent;
+ }
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+/******* right style **********/
+.navbar-form .dis-b {
+    display: block;
+    margin: 20px 0;
+}
+.mainbody .content .error{
+ 	color:#f00;
+}
+.mainbody .content input{
+	border:1px solid #e3e7ec;
+}
+.mainbody .content textarea{
+	border:1px solid #e3e7ec;
+}
+.mainbody .content label{
+	width:70px;
+}
+.mainbody .content .btn{  
+    color: #fff;
+    background-color: #38f;
+}
+.mainbody .content .inputmini{
+	width: 54%;
+	/* margin-right: 50px; */
+}
+.mainbody .content .mini .mini-mar{
+	margin: 20px 0;
+}
+.mainbody .content .input-class{
+	width: 65%;
+}
+/*** 修改按钮 **/
+#update_box{
+	display: none;
+}
+
+/******* left style **********/
+/******* wrapper-left-top style **********/
+.mainbody .content .wrapper-left-top{
+	width: 90%;
+	margin: 21px 0;
+	padding: 20px;
+	border:1px solid #e3e7ec;
+}
+.mainbody .content .wrapper-left-top .person-img{
+	display: inline-block;
+	width: 80px;
+	height:80px;
+	margin: 10px;
+	border:1px solid #38f;
+	box-shadow: 0px 0px 0px 1px #38f inset;
+	vertical-align: middle;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.mainbody .content .wrapper-left-top .person-img img{
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+}
+.mainbody .content .wrapper-left-top .phone{
+	display: inline-block;
+	margin:10px;
+}
+.mainbody .content .wrapper-left-top #person_img{
+	display: none;
+}
+.mainbody .content .wrapper-left .btn{
+	margin: 10px;
+	background-color: #38f;
+}
+.mainbody .content .wrapper-left-top .upload{
+	width: 100%;
+	height:30px;
+	margin-left: -5px;
+}
+.mainbody .content .wrapper-left .upload_img{
+	/* display: none; */
+	margin-left: -5px;
+}
+/******* wrapper-left-bottom style **********/
+.mainbody .content .wrapper-left-bottom{
+	width: 90%;
+	margin: 21px 0;
+	padding: 20px;
+	border:1px solid #e3e7ec;
+}

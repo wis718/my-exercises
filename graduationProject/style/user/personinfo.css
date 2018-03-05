@@ -1,0 +1,87 @@
+@charset "utf-8";
+/** public style **/
+body{
+	background: url(../images/bg/bg3.png) no-repeat center/cover;
+	padding: 0;
+	margin: 0;
+}
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+header,footer{
+	margin: 0;
+	padding: 0;
+	
+}
+footer{
+	
+	background-color: #222;
+}
+/*****iframe header and footer style*******/
+#header{
+	width: 100%;
+	height: 60px;
+	background-color: #555;
+}
+#footer{
+	width: 100%;
+	height: 190px;
+}
+.section{
+	
+	background-color: rgba(255,255,255,1);
+	
+}
+/******* aside style**********/
+.aside{
+	margin: 30px 0;
+	padding: 0;
+	height:410px;
+	border:1px solid #d0d9db;
+    background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+}
+.aside ul li{
+	text-indent: 2em;
+	padding: 10px;
+	border-bottom: 1px solid #dedede;
+}
+.aside ul li.title{
+	background-color: #00b6ff;
+	
+}
+.aside ul li h4{
+	
+	font-size: 16px;
+	font-weight: bold;
+}
+.aside ul li.buttonbg{
+	
+}
+.aside ul li a{
+	display: block;
+	
+
+}
+.aside ul li a:hover{
+	text-decoration: none;
+	background-color: rgba(250,250,250,0.8);
+}
+/*********** mainbody style ***************/
+.mainbody .content{
+	border:1px solid #d0d9db;
+	height: 406px;
+	border-radius: 10px;
+	margin: 30px 100px;
+}
+.mainbody .content .error{
+ 	color:#f00;
+}
+/********** mainbody引入的iframe 的背景色设置 *************/
+#pwd{
+	background-color: rgba(250,250,250,0.5);
+}

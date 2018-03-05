@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>信息管理</title>
+<meta name="description" content="@autor/wis">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../style/bootstrap.min.css">
+<link rel="stylesheet" href="../../style/user/personinfo.css">
+<link rel="stylesheet" href="../../style/public.css">
+<link rel="stylesheet" href="../../style/index.css">
+</head>
+<body>
+	<header>
+		<iframe id="header" src="../../header.html" frameborder="0" width="100%" scrolling="no"></iframe>
+	</header>
+	<div class="section" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 aside">
+					<ul>
+						<li class="title"><h4>个人中心</h4></li>
+						<li class="buttonbg"><a href="">我的趣动区</a></li>
+						<li id="infosrc">个人信息
+							<!-- <a  href="#">个人信息</a> --></li>
+					</ul>
+					<ul>
+						<li class="title"><h4>资料认证</h4></li>
+						<li><a href="">个人实名认证</a></li>
+						<li><a href="">邮箱验证</a></li>
+					</ul>
+					<ul>
+						<li class="title"><h4>账号安全</h4></li>
+						<li id="updatepwd">修改密码</li>
+					</ul>
+				</div>
+				<!-- iframe引入的框架 -->
+				<div class="col-md-10 mainbody">
+					<div class="content">
+						<iframe id="main_content" class="iframebgc" src="../info/info.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<footer>
+		<iframe id="footer"  src="../../footer.html" frameborder="0" width="100%" scrolling="no"></iframe>
+	</footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+		
+$("#infosrc").click(function(){
+	alert("ok");
+	$("#main_content").attr("src","info.html");
+});
+$("#updatepwd").click(function(){
+	alert("ok");
+	$("#main_content").attr("src","pwd.html");
+});
+
+</script>
+</html>	

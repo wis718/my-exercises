@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+
+/*---------------
+    header start
+-----------------*/
+@media screen and (max-width:960px){
+	body{width:100%;}
+	header .topbar .container .logo{
+		float:none;
+		text-align:center;
+	}
+	header .topbar .container nav{
+		display:none;
+	}
+	
+	header .topbar .container .topbar-r{
+		position: absolute;
+		top:50%;
+		margin-top:-16px;
+		right:20px;
+	}
+	header .topbar .container .topbar-r .login{
+		display:none;	
+
+	}
+	header .topbar .container .topbar-r .menu{
+		display:inline-block;
+    }
+	/*-- banner start --*/
+	header .banner video{
+		height:500px;
+		}
+	header .banner .mark .mark-r{
+		display:none;
+	}
+	header .banner .mark .mark-l{
+		display:block;
+	}
+	/*---------------
+		main start
+	-----------------*/
+	/*---- sec1 start ----*/
+	.main .sec1 .container .media img{
+		display:block;
+	}
+	.main .sec1 .container .media .video-wrap{
+		display:none;
+	}
+	/*------ sec2 starts ------*/
+	.main .sec .text{
+		width:100%;
+		
+	}
+	.main .sec .text h3{
+		text-align:center;
+	}
+	.main .sec .media{
+		width:100%;	
+		
+	}
+	
+
+}
+@media screen and (max-width:970px){
+	/*------ sec6 starts ------*/
+	.main section ul.flex{
+		margin-top:0;
+	}
+	.main section ul.flex{	
+		padding:0;
+	}
+	/*------ sec7 starts ------*/
+	.main .sec7{
+		display:none;
+	}
+	/*------ sec8 starts ------*/
+	.main .sec8 .container ul.media li{
+		width:100%;
+	}
+	/*------ sec10 starts ------*/
+	.main .sec10 .container ul.media{
+		flex-wrap:wrap;
+	}
+	.main .sec10 .container ul.media li{
+		padding:10px 0;
+		margin:0;
+		width:50%;
+	}
+	.main .sec10 .container ul.media p{
+		display:none;
+	}
+	/*------ sec11 starts ------*/
+	.main .sec11{
+		display:none;
+	}
+	/*------ sec12 starts ------*/
+
+	/*------ sec13 starts ------*/
+	.main .sec13 .container .text .hotline{
+		width:100%;
+	}
+	.main .sec13 .container .text .time{
+		margin:20px 0;
+		width:100%;
+	}
+	.main .sec13 .container .media{
+	
+	}
+	/*------ sec15 starts ------*/
+	.main .sec15 .container .sec15-r{
+		display:none;
+		
+	}
+}
+@media screen and (max-width:760px){
+	.main section .text h3{
+		font-size:20px;
+	}
+	.main section .text p{
+		font-size:12px;
+		line-height:2;
+	}
+}

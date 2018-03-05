@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+    background-color: transparent;
+}
+/** public style **/
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+/******* mainbody style ***********/
+.navbar-form .dis-b{
+	display: block;
+	margin:20px 0;
+}
+.mainbody .content .error{
+ 	color:#f00;
+}
+.mainbody .content label{
+	width:80px;
+}
+.mainbody .content .btn{
+    
+    color: #fff;
+    background-color: #555;
+}
+.mainbody .content .btn-update{
+	width: 196px;
+}
+.mainbody .content .verifyimg{
+	width:90px;
+	height:34px;
+	margin-right: 35px;
+	margin-left: 5px;
+	background-color: #ffff00;
+
+}

@@ -1,0 +1,18 @@
+
+@font-face{
+	font-family: "myfont";
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot'), format('embedded-opentype'),
+	url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+	url('../fonts/FZY1JW.ttf') format('truetype'),
+	url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+	url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "FZY1JW";
+	src: url('../fonts/FZY1JW.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

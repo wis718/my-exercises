@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors wis (you@example.org)
+ * @date    2018-01-19 15:05:06
+ * @version $Id$
+ */
+ .container .wrapper{
+ 	margin: 60px 0;
+ }
+ .container .wrapper .form-group {
+  	color:#333;
+  }
+ .container .wrapper h4{
+ 	margin:0;
+ 	padding:10px 0;
+ 	text-align: center;
+ 	font-size: 24px;
+ 	color:#555;
+ 	background-color: #36b6b5;
+ }
+.container .wrapper .dis-b{
+	display: block;
+	margin:40px 0;
+}
+.container .wrapper .act_content{
+	width:450px;
+	height: 100px;
+}
+.container .wrapper label{
+	width:100px;
+}
+.container .wrapper .btn{
+	color:#fff;
+	background-color: #36b6b5;
+}
+.container .wrapper span{
+	color: red;
+	vertical-align: middle;
+}
+.container .wrapper .input-file{
+	display: inline-block;
+}

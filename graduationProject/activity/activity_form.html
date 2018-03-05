@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>发布活动</title>
+<meta name="description" content="@author wis">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../style/bootstrap.min.css">
+<link rel="stylesheet" href="../js/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+<link rel="stylesheet" href="../style/activity/activity_form.css">
+<link href="" rel="stylesheet">
+</head>
+<body>
+	<header>logo</header>
+    <div class="container">
+    	<div class="wrapper">   			
+    		<div class="row">
+    			<div class="col-xs-2 col-sm-2 col-md-2"></div>
+    			<div class="col-xs-8 col-sm-8 col-md-8">
+    				<h4>发布活动</h4>
+    				<form action="<c:url value='/UserServlet'/>" method="post" class="navbar-form " id="">
+						<input type="hidden" name="method" value=""/>
+						<div class="form-group dis-b">
+							<label for="username">活动名称：</label>
+							<input type="text" name="actname" class="form-control inputClass" id="actname" value="${form.actname}">
+							<span>*</span>
+						</div>
+						<div class="form-group dis-b">
+							<label for="username">活动日期：</label>
+							<input type="text" name="actdate" class="form-control inputClass" id="actdate" value="${form.actdate}">
+							<span>*</span>
+						</div>
+						<div class="form-group dis-b">
+							<label for="username">活动地址：</label>
+							<input type="text" name="addr" class="form-control inputClass" id="addr" value="${form.addr}">
+							<span>*</span>
+						</div>
+						<div class="form-group dis-b">
+							<label for="username">活动内容：</label>
+							<textarea type="text" name="actdesc" class="form-control inputClass act_content" id="actdesc" value="${form.actdesc}">${form.actdesc}
+							</textarea>
+							<span>*</span>
+						</div>
+						<div class="form-group dis-b">
+						    <label>海报或图片：</label>
+			   				<input type="file" class="input-file">
+		   				</div>
+						<div class="form-group dis-b">
+						    <label></label>
+			   				<input type="submit" class="btn" value="确认发布">
+		   				</div>
+		    		</form>
+    			</div>
+    			<div class="col-xs-2 col-sm-2 col-md-2"></div>
+    		</div>
+    		
+    	</div>
+    </div>
+    <footer></footer>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script>
+ //使用juery-ui的时间选择器
+  $("#actdate").datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat:"yy-mm-dd"
+  });
+  $("#ui-datepicker-div").css({"backgroundColor":"#eee","font-size":"18px","padding":"20px"});
+</script>
+</html>

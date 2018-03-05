@@ -1,0 +1,16 @@
+@charset "utf-8";
+/** footer style **/
+.footer .row{
+	padding: 15px 0;
+}
+.footer {
+	background-color: #222;
+	text-align: center;
+	color: #bababa;
+}
+.footer dl dt{
+	font-size: 16px;
+}
+.footer dl dd{
+	margin:10px 0;
+}

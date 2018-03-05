@@ -1,0 +1,68 @@
+@charset "utf-8";
+/** public style **/
+@media (min-width: 1200px) {
+	.container{
+	    width: 1280px;
+    }
+}
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.header{
+   color: #fff;
+  
+}
+.header .navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.header .navbar-inverse{
+	min-height: 60px;
+}
+/** login user style**/
+.header .navbar-inverse .myid{
+	position: relative;
+	display: none;
+	padding: 15px;
+
+}
+.header .navbar-inverse .myid ul.myinfo{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	display: none;
+	padding:10px;
+	z-index: 99;
+	background-color: rgba(0,0,0,0.5);
+}
+.header .navbar-inverse .myid ul.myinfo>li{
+	display: block;
+	padding:10px;
+}
+/** nav1 style **/
+.header  .navbar-inverse .navbar-header a:hover{
+	color: #fff;
+}
+.header  .navbar-inverse .navbar-header .navbar-brand{
+   color: #fff;
+   font-size:20px;
+   padding: 15px 47px;
+}
+.header  .navbar-inverse ul.header li{
+	color: #fff;
+	font-size:18px;
+	margin:5px 10px;
+	padding:10px;
+	line-height: 20px
+}
+.header .navbar-inverse ul.header .active{
+	border:1px solid #fff;
+}
+.header .navbar-inverse ul.header a:hover{
+	color: #fff;
+	text-decoration: none;
+}

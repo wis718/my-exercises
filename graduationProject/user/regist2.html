@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>趣动用户注册</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" href="style/bootstrap.min.css">
+<link rel="stylesheet" href="style/font-awesome.min.css"/>
+<link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+<link rel="stylesheet" href="style/public.css">
+<link rel="stylesheet" href="style/user/register.css">
+
+</head>
+<body>
+    <div class="wrapper">
+    	<div class="container">
+    		<div class="header">
+		    	<div class="logo">aaa</div>
+		    	<h4>趣动用户注册界面</h4>
+	    	</div>
+	    	<div class="register-box section">
+	    		 <div class="row">
+				    <div class="col-md-2"></div>
+				    <div class="col-md-8 register">
+				    	<div class="button">
+				    		<div  id="person" class="person"><span>个<br/>人<br/>用<br/>户</span></div>
+				    		<div  id="company" class="company">企<br/>业<br/>用<br/>户</div>
+				    	</div>
+				    	<div class="register-form pad-20">
+							<form action="<c:url value='/UserServlet' />" method="post" class="navbar-form t-a-l" id="company_form">
+								<input type="hidden" name="method" value="registCompany"/>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<div class="form-group wid-38">
+						    				<input type="text" name="username" class="form-control inputClass" id="cusername" placeholder="用户名" value="${conpanyForm.username }">
+						    				<p class="error" id="cusernameError">${conpanyErrors.cusername }  </p>	   	
+				   						</div>
+									</div>
+									
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="password" name="password" class="form-control inputClass" id="cpassword" placeholder="密码" value="${conpanyForm.password }">
+						    				<p class="error" id="cpasswordError">${conpanyErrors.cpassword }  </p>	 	   	
+						   				</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="password" name="repassword" class="form-control inputClass" id="crepassword" placeholder="确认密码" value="${conpanyForm.repassword }">	
+						    				<p class="error" id="crepasswordError">${conpanyErrors.crepassword }  </p>	    	
+						   				</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="comname" class="form-control inputClass" id="companyName" placeholder="企业名称" value="${conpanyForm.comname }">
+						    				<p class="error" id="companyNameError">${conpanyErrors.comname }  </p>	   	
+						   				</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="legalperson" class="form-control inputClass" id="legalPerson" placeholder="企业法人" value="${conpanyForm.legalperson }">
+						    				<p class="error" id="legalPersonError">${conpanyErrors.legalperson } </p>	   	
+						   				</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="legalnum" class="form-control inputClass" id="legalNum" placeholder="工商注册代码/注册号" value="${conpanyForm.legalnum }">
+						    				<p class="error" id="legalNumError">${conpanyErrors.legalnum }  </p>	   	
+						   				</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="profession" class="form-control inputClass" id="profession" placeholder="所属行业" value="${conpanyForm.profession }">
+						    				<p class="error " id="professionError"> ${conpanyErrors.profession } </p>	   	
+						   				</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="phone" class="form-control inputClass" id="mobile" placeholder="联系电话" value="${conpanyForm.phone }">	
+						    				<p class="error" id="mobileError"> ${conpanyErrors.mobile } </p>	    	
+						   				</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+						    				<input type="text" name="address" class="form-control inputClass" id="address" placeholder="公司地址" value="${conpanyForm.address }">
+						    				<p class="error " id="addressError">${conpanyErrors.address }  </p>
+						   				</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<div class="form-group wid-91">
+						    				<input type="text" class="form-control inputClass" id="email" placeholder="电子邮箱" value="${conpanyForm.email }">
+						    				<p class="error" id="emailError">${conpanyErrors.email }  </p>	   	
+						   				</div>
+									</div> 
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+					   				 		<div class="verifyimg verifyimg-box ">   <img src="<c:url value='/VerifyCodeServlet' />" id="verifyimg"/>
+					   				 		</div>	
+						   				 </div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<div class="form-group wid-8">
+											<input type="button" class="verifycode newverify" id="change" onclick="_changeVerify()" value="换一张"/> 
+										</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-md-12">
+										<div class="form-group wid-91">
+						    				<input type="text" name="verifycode" class="form-control inputClass verify" id="cverifycode" placeholder="验证码" value="${conpanyForm.verifycode }">
+						    				<p class="error" id="cverifycodeError">${conpanyErrors.cverifycode }  </p>	 	 	   	
+						   				</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<div class="checkbox">
+										    <label title="我已阅读《趣动网站相关协议》，并同意并授权！">
+										    <input type="checkbox" class="checkbox-check inputClass" id="companycheckBox">我已阅读<a href="">《趣动网站相关协议》</a>，并同意并授权！
+										    </label>
+										    <p class="error" id="companycheckBoxError"> </p>
+										</div>
+									</div>
+								</div>
+								<div class="row mar-20">
+									<div class="col-xs-12 col-sm-12 col-md-12 btn-register">
+										<div class="form-group wid-38">
+						   				 	<input type="submit"  class="btn btn-default btn-register submit" value="注册">
+						   				 </div>
+									</div>
+									
+								</div>                                     
+							</form>
+				    	   
+				    	</div>
+				    </div>
+				    <div class="col-md-2"></div>        
+				 </div>
+    		</div> 
+    	</div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<!-- <script src="js/register.js"></script> -->
+<script>
+
+	
+
+</script>
+</html>

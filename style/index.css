@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-03-04 20:45:38
+ * @version $Id$
+ */
+*{margin:0;padding:0;}
+ul li{
+	height:200px;
+	padding:40px;
+	background: #fff url("../images/01.jpg") no-repeat center/cover;
+}
+ul li a{
+	padding:20px;
+	font-size: 20px;
+	color:#fff;
+	text-decoration: none;
+}
+ul li a:hover{
+	color:orange;
+}

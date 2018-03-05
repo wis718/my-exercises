@@ -1,0 +1,228 @@
+@charset "UTF-8";
+body{
+	color: #fff;
+	background: #fff url(../../images/bg/login_bg.png) no-repeat center fixed;
+}
+.wrapper .header .logo{
+	color: #fff;
+    font-size: 20px;
+    
+}
+.wrapper .register-box{
+	margin-top: 100px;
+}
+.wrapper .register-box .row .register{
+	position: relative;
+	display: flex;
+	min-height: 500px;
+	color: #555;
+	background:rgba(255,255,255,0.8);
+	box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+	border-radius: 3px;
+	overflow: hidden;
+}
+.wrapper .register-box .row .register .button{
+	width: 10%;
+	margin:0px;
+	padding: 10px;
+}
+.wrapper .register-box .row .register .button .person{
+	position: absolute;
+	display: block;
+	top:20%;
+	width: 8%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #555;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.wrapper .register-box .row .register .button .person:hover{ 
+	box-shadow: 0 0 10px 5px rgba(40,40,40,0.5);
+}
+.wrapper .register-box .row .register .button .company{
+	position: absolute;
+	top:55%;
+	display: block;
+	width: 8%;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(192,120,120,0.9);
+	border-radius: 10px;
+	cursor: pointer;
+}
+.wrapper .register-box .row .register .button .company:hover{
+	box-shadow: 0 0 10px 5px rgba(194,104,104,0.5);
+}
+.wrapper .register-box .row .register .register-form{
+	width: 90%;
+	padding: 40px 0 20px 0;
+}
+.wrapper .register-box .row .register .register-form .navbar-form{
+	text-align: center;
+}
+.wrapper .register-box .row .register .register-form  .dis-b{
+	width:40%;
+	display: block;
+	margin:3% auto;
+}/***************************  加  ***********************************/
+.wrapper .register-box .row .register .pad-20{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+}
+.wrapper .register-box .row .register .register-form .t-a-l{
+	text-align: left;
+}
+.wrapper .register-box .row .register .register-form .mar-20{
+	margin:20px 0;
+}
+.wrapper .register-box .row .register .register-form .wid-38{
+	width: 38%;
+}
+.wrapper .register-box .row .register .register-form .wid-5{
+	width: 50%;
+}
+.wrapper .register-box .row .register .register-form .wid-6{
+	width: 60%;
+}
+.wrapper .register-box .row .register .register-form .wid-8{
+	width: 80%;
+}
+.wrapper .register-box .row .register .register-form .wid-91{
+	width: 91%;
+}
+.wrapper .register-box .row .register .register-form .wid-10{
+	width: 100%;
+	padding: 0;
+}
+.wrapper .register-box .row .register .register-form .verifyimg-box{
+	width:100%; 
+    height:40px;
+    color: #fff;
+    background-color: #555;
+
+}
+.wrapper .register-box .row .register .register-form .verifycode{
+    height:40px;
+    color: #fff;
+    background-color: #555;
+
+}
+.wrapper .register-box .row .register .register-form input.verify{
+	width:100%;
+}
+.wrapper .register-box .row .register .register-form .btn-register{
+	padding: 10px 15px;
+}
+/*****************************************************************/
+.wrapper .register-box .row .register .register-form  input{
+	width:100%;
+}
+.wrapper .register-box .row .register .register-form input.phone{
+	width:64%;
+}
+
+.wrapper .register-box .row .register .register-form input.date{
+	width:49%;
+}
+.wrapper .register-box .row .register .register-form  input.uploadFile{
+	width: 100%;
+}
+.wrapper .register-box .row .register .register-form  .checkbox{
+	width: 40%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.wrapper .register-box .row .register .register-form .checkbox a{
+	color: #082af8;
+}
+.wrapper .register-box .row .register .register-form .checkbox-check{
+	width:20px;
+}
+.wrapper .register-box .row .register .register-form input.btn-register{
+	color: #fff;
+	background-color: #555;
+}
+.wrapper .register-box .row .register .register-form p.error{
+	display: none;
+	width:100%;
+	text-align: left;
+	color:#f00;
+}
+.wrapper .register-box .row .register .register-form .stepthree .pic{
+	width: 100%;
+}
+.wrapper .register-box .row .register .register-form .stepthree .pic .addpic{
+	min-width: 100%;
+	min-height: 200px;
+	padding:10px;
+	text-align: left;
+	border:1px dashed #86c0e5;
+}
+/* <!-- progressbar --> */
+#progressbar {
+	text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 20px;
+    line-height: 20px;
+    display: block;
+    font-size: 10px;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;/*put it behind the numbers*/
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+#progressbar li.active:after {
+    background: #049105;
+   
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*Hide all except first fieldset
+	除了第一个其他都隐藏
+*/
+
+fieldset:not(:first-of-type) {
+display: none;/*remove to see all feildsets*/
+}
